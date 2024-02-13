@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8d7da; /* Red background */
+  font-family: 'Poiret One', cursive;
+}
+
+#invitation-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-content {
+  text-align: center;
+  color: #fff; /* White text */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.invitation-content h1 {
+  color: rgb(255, 140, 140);
+  font-size: 3rem;
+  margin: 0.5em 0;
+}
+
+.invitation-content h2 {
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.invitation-content button {
+  background-color: #ff69b4; /* Pink button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.invitation-content button:hover {
+  background-color: #d32f2f; /* Darker pink on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .invitation-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .invitation-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .invitation-content button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .invitation-content h1 {
+    font-size: 2rem;
+  }
+  
+  .invitation-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .invitation-content button {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}

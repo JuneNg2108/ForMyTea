@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ending Celebration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8d7da; /* Red background */
+            background: url('705d581d-e18c-4bf6-83ac-d5c06f6edf77.webp') no-repeat center center fixed;
+            /* Adjust background-size to be smaller */
+            background-size: 60%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+         /* Responsive adjustments */
+         @media (max-width: 768px) {
+            /* Adjustments for tablets and below */
+            body {
+                font-size: 14px; /* Smaller text on smaller devices */
+                background-size: contain; /* Adjust background size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Adjustments for small devices */
+            body {
+                font-size: 12px; /* Even smaller text for small devices */
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const shouldPlayMusic = localStorage.getItem('playMusic') === 'true';
+          
+          if (shouldPlayMusic) {
+            var backgroundMusic = document.createElement('audio');
+            backgroundMusic.src = "Bruno Mars - Just The Way You Are (Lyrics) (online-video-cutter.com).mp3"; // The same audio file
+            backgroundMusic.loop = true;
+            backgroundMusic.play().catch(function(e) {
+              console.error("Audio play failed:", e);
+            });
+          }
+        });
+        </script>
+        
+</body>
+</html>
