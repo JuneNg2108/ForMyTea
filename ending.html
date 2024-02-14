@@ -2,55 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ending Celebration</title>
+    <title>Valentine's Day Greeting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #f8d7da; /* Red background */
-            background: url('705d581d-e18c-4bf6-83ac-d5c06f6edf77.webp') no-repeat center center fixed;
-            /* Adjust background-size to be smaller */
-            background-size: 60%;
-            height: 100vh;
+            background-color: #f8d7da; /* Pink background as in the screenshot */
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            height: 100vh;
             text-align: center;
+            font-family: 'Arial', sans-serif;
         }
-         /* Responsive adjustments */
-         @media (max-width: 768px) {
-            /* Adjustments for tablets and below */
-            body {
-                font-size: 14px; /* Smaller text on smaller devices */
-                background-size: contain; /* Adjust background size */
+        .card {
+            background: #fbb1bd; /* Lighter pink for the card */
+            border-radius: 15px; /* Rounded corners for the card */
+            padding: 40px; /* Adjust padding to fit content */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the card */
+            width: 350px;
+            position: relative;
+            overflow: hidden; /* Ensure nothing overflows the rounded corners */
+        }
+        .hearts {
+            color: #e91e63;
+            font-size: 1.5em;
+            margin: 0.5em 0;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+        }
+        .greeting {
+            font-size: 2em; /* Larger font size for the greeting */
+            color: #880e4f; /* Dark pink for the text */
+            margin: 0.5em 0; /* Space around the greeting */
+            line-height: 1.2; /* Adjust line height for better readability */
+            font-weight: bold; /* Make the text bold */
+        }
+        .clouds {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path fill="%23ffffff" d="M0,10 q50,-25 100,0 v10 h-100z" /></svg>');
+            background-repeat: repeat-x;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px; /* Adjusted height for cloud effect */
+        }
+
+         /* Keyframes for the floating hearts */
+         @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(1.0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1.0);
+                opacity: 0;
             }
         }
 
-        @media (max-width: 480px) {
-            /* Adjustments for small devices */
-            body {
-                font-size: 12px; /* Even smaller text for small devices */
-            }
+        /* Use the Font Awesome heart icon for floating hearts */
+        .floating-heart {
+            position: absolute;
+            bottom: -100px; /* Start off screen */
+            color: #e91e63;
+            font-size: 2em; /* Adjust size as needed */
+            animation: float 5s ease-in-out infinite;
         }
-    </style>
-    </style>
+
+        /* Different animation delays for each heart */
+        .floating-heart:nth-child(odd) {
+            animation-delay: -2s;
+            left: 10%; /* Adjust left for left side of the screen */
+        }
+
+        .floating-heart:nth-child(even) {
+            animation-delay: -2s;
+            right: 10%; /* Adjust right for right side of the screen */
+        }
+
+        /* Adjust the starting position of each heart */
+        .floating-heart:nth-of-type(4n + 1) {
+            bottom: -10px; /* Adjust bottom for staggering start */
+        }
+
+        .floating-heart:nth-of-type(4n + 2) {
+            bottom: -50px;
+        }
+
+        .floating-heart:nth-of-type(4n + 3) {
+            bottom: -90px;
+        }
+
+        .floating-heart:nth-of-type(4n + 4) {
+            bottom: -130px;
+        }
+</style>
 </head>
 <body>
+    
+    <div class="card">
+        <div class="hearts">♥ ♥ ♥</div>
+        <div class="greeting">Happy Valentine's Day!</div>
+        <div class="clouds"></div>
+    </div>
+
+    <div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+<div class="floating-heart fas fa-heart"></div>
+
+
+<script>
+    // Function to create a new floating heart
+    function createHeart() {
+        const heart = document.createElement('i');
+        heart.className = 'floating-heart fas fa-heart';
+        document.body.appendChild(heart);
+        // Randomize the starting position and animation delay
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDelay = -(Math.random() * 5) + 's';
+    }
+
+    // Create multiple hearts
+    for (let i = 0; i < 100; i++) { // You can change 50 to however many hearts you want
+        createHeart();
+    }
+
+    // Existing code for music playback
+    document.addEventListener("DOMContentLoaded", function() {
+      const shouldPlayMusic = localStorage.getItem('playMusic') === 'true';
+
+      if (shouldPlayMusic) {
+        var backgroundMusic = document.createElement('audio');
+        backgroundMusic.src = "Bruno Mars - Just The Way You Are (Lyrics) (online-video-cutter.com).mp3";
+        backgroundMusic.loop = true;
+        document.body.appendChild(backgroundMusic);
+        backgroundMusic.play().catch(function(e) {
+          console.error("Audio play failed:", e);
+        });
+      }
+    });
+</script>
+    
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
           const shouldPlayMusic = localStorage.getItem('playMusic') === 'true';
           
           if (shouldPlayMusic) {
             var backgroundMusic = document.createElement('audio');
-            backgroundMusic.src = "Bruno Mars - Just The Way You Are (Lyrics) (online-video-cutter.com).mp3"; // The same audio file
+            backgroundMusic.src = "Bruno Mars - Just The Way You Are (Lyrics) (online-video-cutter.com).mp3";
             backgroundMusic.loop = true;
+            document.body.appendChild(backgroundMusic);
             backgroundMusic.play().catch(function(e) {
               console.error("Audio play failed:", e);
             });
           }
         });
-        </script>
+    </script>
         
 </body>
 </html>
