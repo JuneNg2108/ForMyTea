@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
     "Em là miếng socola ngọt ngào nhất mà a từng biết",
     "Là người con gái đáng yêu nhất mà a từng gặp",
     "A muốn nói với em rằng a yêu em nhiều lắm",
-    " Ở bên a nhé, em bé của a <33",
-    "a"
+    "Ở bên a nhé, em bé của a <33",
+    ""
   ];
   
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
       messageElement.textContent = messages[messageIndex];
 
       // Redirect if the last message is shown
-      if (messages[messageIndex] === "a") {
+      if (messages[messageIndex] === "") {
         window.location.href = 'ending.html'; // Redirects to ending.html
       }
     }
